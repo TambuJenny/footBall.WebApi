@@ -11,6 +11,10 @@
 	<groupId>androidproject.api</groupId>
 	<artifactId>androidprojectapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>footballcore</module>
+	</modules>
 	<name>androidprojectapi</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
