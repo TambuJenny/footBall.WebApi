@@ -1,10 +1,21 @@
+package androidproject.api.androidprojectapi.Model;
+
 import java.util.UUID;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @Entity
-@Tables(name = "cidade")
+@NoArgsConstructor
+@Table(name = "cidade")
 
 public class Cidade {
 
@@ -26,7 +37,7 @@ public class Cidade {
     }
 
     public void setPaisOrganizador(PaisOrganizador paisOrganizador) {
-        IdPaisOrganizador = paisOrganizador;
+        PaisOrganizador = paisOrganizador;
     }
 
     public UUID getId() {
@@ -38,6 +49,6 @@ public class Cidade {
     }
 
     public PaisOrganizador PaisOrganizador() {
-        return IdPaisOrganizador;
+        return PaisOrganizador;
     }
 }
