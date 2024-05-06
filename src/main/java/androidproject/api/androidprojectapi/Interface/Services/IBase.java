@@ -1,4 +1,4 @@
-package androidproject.api.androidprojectapi.Interface;
+package androidproject.api.androidprojectapi.Interface.Services;
 
 import java.util.List;
 import java.util.UUID;
